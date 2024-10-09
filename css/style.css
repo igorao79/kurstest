@@ -1028,14 +1028,14 @@ a {
   }
   .main__shop {
     min-height: 1900px;
-    width: 100%;
+    min-width: 500px;
     top: 1220px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 0;
-    margin-left: -43px;
+    margin-left: -53px;
     left: 0;
     right: 0;
     -webkit-box-align: center;
@@ -1048,12 +1048,12 @@ a {
     padding-left: 78%;
   }
   .main__shopflexcont {
-    width: 80%;
+    width: 100%;
     max-height: 1567px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 60px;
+    gap: 40px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -1065,7 +1065,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: 550px;
+    right: 530px;
     margin-left: 500px;
   }
   .main__shoptitleblock {
@@ -1077,7 +1077,10 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-    margin-right: 300%;
+    margin-right: 150%;
+  }
+  .main__shopflexcontel {
+    scale: 0.9;
   }
   .main__foot {
     top: 650px;
@@ -1462,6 +1465,17 @@ a {
   }
   .aside__headertitlecontainer {
     margin-left: 40%;
+  }
+  .aside__footerflexcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 200px); /* 4 колонки */
+    grid-template-rows: repeat(5, 10px); /* 2 строки */
+    gap: 20px; /* Отступы между элементами */
+    width: 100%;
+  }
+  .aside__footerflexel {
+    text-align: center; /* Центрирование содержимого */
+    padding: 10px;
   }
   .aside__footertitleblock {
     margin-right: 25%;
