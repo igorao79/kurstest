@@ -9,7 +9,12 @@
 body {
   background: conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0), conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 18px 18px, conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 36px 36px, conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 54px 54px, repeating-linear-gradient(135deg, #b6b6b6 0 12.5%, #e8e8e8 0 25%);
   background-size: 72px 72px;
-  max-width: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1040px) {
@@ -74,6 +79,24 @@ a {
 @media (max-width: 1040px) {
   .page {
     max-width: 968px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 604) {
+  .page {
+    max-width: 604px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -202,12 +225,18 @@ a {
 
 @media (max-width: 1040px) {
   .header {
-    max-width: 968px;
+    max-width: 1040px;
     padding-left: 20px;
     gap: 50px;
   }
   .header__title {
     font-size: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
   .header__logo {
     width: 158px;
@@ -248,8 +277,22 @@ a {
 }
 @media (max-width: 604px) {
   .header {
-    padding-top: 15px;
     gap: 30px;
+    padding: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    max-width: 604px;
+    width: 100%;
+  }
+  .header__title {
+    font-size: 1.3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .main {
@@ -471,6 +514,12 @@ a {
   font-size: 0.75rem;
   font-family: "sansr";
   line-height: 22px;
+}
+.main__mainline {
+  width: 392.3px;
+  height: 3.2px;
+  background: rgb(238, 238, 238);
+  display: none;
 }
 .main__mainblockflexelrfestival {
   display: -webkit-box;
@@ -740,7 +789,7 @@ a {
 
 @media (max-width: 1040px) {
   .main {
-    max-width: 968px;
+    max-width: 1040px;
     position: relative;
     height: 5500px;
     -webkit-box-align: center;
@@ -753,7 +802,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 450px;
+    gap: 400px;
+    left: -90px;
+    right: 0;
   }
   .main__mainblockflexcont {
     gap: 350px;
@@ -768,8 +819,12 @@ a {
     width: 301.9px;
     height: 302.4px;
   }
+  .main__brandblockflexcont {
+    width: 100%;
+    right: 140px;
+  }
   .main__brandblockflexel {
-    width: calc(50% - 6px);
+    width: calc(35% - 6px);
     height: 247px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -782,11 +837,23 @@ a {
             align-items: center;
     padding-bottom: 16px;
     padding: 50px 10px;
+    margin: 0;
+    gap: 0;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
   }
   .main__brandblockflexelcontent {
     padding: 10px 0px;
     width: 343.9px;
     height: 135.8px;
+  }
+  .main__brandblocktitle {
+    text-align: center;
+    margin-right: 180px;
+  }
+  .main__brandblockline {
+    margin-right: 180px;
   }
   .main__shop {
     max-width: 100%;
@@ -849,6 +916,30 @@ a {
   }
   .main__shopline {
     margin-right: 50px;
+  }
+  /* Дополнительная адаптивность для экранов шириной до 480px */
+}
+@media (max-width: 1040px) and (max-width: 768px) {
+  .main__mainblock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* Меняем направление на колонку */
+    gap: 30px; /* Уменьшаем отступы между блоками */
+  }
+}
+@media (max-width: 1040px) and (max-width: 480px) {
+  .main__shopflexcont {
+    gap: 10px; /* Уменьшаем отступ между карточками */
+  }
+  .main__shopflexcontel {
+    padding: 20px; /* Уменьшаем отступ внутри карточек */
+  }
+  .main__brandblockflexel {
+    padding: 30px 5px; /* Уменьшаем отступы внутри блоков */
+  }
+  .main__brandblockflexelcontent {
+    width: auto; /* Убираем фиксированную ширину */
   }
 }
 .aside {

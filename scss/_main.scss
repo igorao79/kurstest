@@ -221,6 +221,13 @@
         line-height: 22px;
     }
 
+    &__mainline {
+        width: 392.3px;
+        height: 3.2px;
+        background: rgba(238, 238, 238, 1);
+        display: none;
+    }
+
 
     &__mainblockflexelrfestival {
         display: flex;
@@ -486,7 +493,7 @@
 
 
     .main {
-        max-width: 968px;
+        max-width: 1040px;
         position: relative;
         height: 5500px;
         align-items: center;
@@ -495,7 +502,9 @@
     &__mainblock {
         top: 180px;
         display: flex;
-        gap: 450px;
+        gap: 400px;
+        left: -90px;
+        right: 0;
     }
 
     &__mainblockflexcont {
@@ -510,21 +519,42 @@
         height: 302.4px;
     }
 
+    &__brandblockflexcont {
+        width: 100%;
+        right: 140px;
+    }
+
 
     &__brandblockflexel {
-        width: calc(50% - 6px); 
+        width: calc(35% - 6px); 
         height: 247px;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 16px;
         padding: 50px 10px;
+        margin: 0;
+        gap: 0;
+        transform: scale(1);
     }
 
     &__brandblockflexelcontent {
         padding: 10px 0px;
         width: 343.9px;
         height: 135.8px;
+    }
+
+    &__brandblocktitle {
+        text-align: center;
+        margin-right: 180px;
+    }
+
+    &__brandblockline {
+        margin-right: 180px;
+    }
+
+    &__mainline {
+        // display: block;
     }
 
 
@@ -586,5 +616,36 @@
 
 
 
+    }
+
+    @media (max-width: 768px) {
+        .main {
+            &__mainblock {
+                flex-direction: column; /* Меняем направление на колонку */
+                gap: 30px; /* Уменьшаем отступы между блоками */
+            }
+            
+        }
+    }
+    
+    /* Дополнительная адаптивность для экранов шириной до 480px */
+    @media (max-width: 480px) {
+        .main {
+            &__shopflexcont {
+                gap: 10px; /* Уменьшаем отступ между карточками */
+            }
+    
+            &__shopflexcontel {
+                padding: 20px; /* Уменьшаем отступ внутри карточек */
+            }
+    
+            &__brandblockflexel {
+                padding: 30px 5px; /* Уменьшаем отступы внутри блоков */
+            }
+    
+            &__brandblockflexelcontent {
+                width: auto; /* Убираем фиксированную ширину */
+            }
+        }
     }
 }

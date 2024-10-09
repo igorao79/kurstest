@@ -110,13 +110,17 @@
 
 @media (max-width: 1040px) {
     .header {
-        max-width: 968px;
+        max-width: 1040px;
         padding-left: 20px; 
         gap: 50px; 
 
 
         &__title {
             font-size: 2rem;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            margin: 0;
         }
 
 
@@ -162,7 +166,31 @@
 
 @media (max-width: 604px) {
     .header {
-        padding-top: 15px; 
         gap: 30px; 
+        padding: 0;
+        align-items: start;
+        justify-content: start;
+        max-width: 604px;
+        width: 100%;
+
+
+        &__title {
+            font-size: 1.3rem;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
 }

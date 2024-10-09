@@ -20,7 +20,9 @@ background:
       conic-gradient(at 50% 25%,#0000 75%,#f4f4f4 0) calc(3*18px) calc(3*18px),
       repeating-linear-gradient(135deg,#b6b6b6 0 12.5%,#e8e8e8 0 25%);
 background-size: calc(4 * 18px) calc(4*18px);
-max-width: 2000px;
+
+display: flex;
+align-items: center;
 
 
 }
