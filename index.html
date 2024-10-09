@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer 1</title>
+    <link rel="icon" href="pics/igoric.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="headerfilter"></div>
+        <header class="header">
+            <div class="header__burgercontainer">
+                <picture class="header__logocontainer">
+                    <source srcset="./pics/headerpics/logo.webp" type="image/webp">
+                    <img src="./pics/headerpics/logo.png" class="header__logo" alt="Logo">
+                </picture>
+                <div class="header__burger" onclick="toggleMenu()"> <!-- Бургер-меню -->
+                    <div class="header__burger-icon"></div>
+                    <div class="header__burger-icon"></div>
+                    <div class="header__burger-icon"></div>
+                </div>
+                <nav class="header__burgercontainerelements" id="burger-menu">
+                    <a href="#" class="header__burgerlink">главная</a>
+                    <a href="#" class="header__burgerlink">посты</a>
+                    <a href="#" class="header__burgerlink">статьи</a>
+                    <a href="#" class="header__burgerlink">теги</a>
+                    <a href="#" class="header__burgerlink">темы</a>
+                    <a href="#" class="header__burgerlink">контакты</a>
+                </nav>
+            </div>            
+            <h1 class="header__title">Блог о творчестве, спорте, <br> и образе жизни</h1>
+        </header>
+        <main class="main">
+            <section class="main__brandblock">
+                <h2 class="main__brandblocktitle">Сейчас в тренде</h2>
+                <div class="main__brandblockline"></div>
+                <div class="main__brandblockflexcont">
+                    <div class="main__brandblockflexel">
+                        <div class="main__brandblockflexelcontent">
+                            <div class="main__brandblockflexelcontentup">
+                                <a href="#" class="main__brandblocklink">lifestyle</a>
+                                <a href="#" class="main__brandblocklink">interior</a>
+                            </div>
+                            <div class="main__brandblockflexelcontentdowm">
+                                <h2 class="main__brandblocksubtitle">Сейчас в тренде: сад <br> на подоконнике</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__brandblockflexel">
+                        <div class="main__brandblockflexelcontent">
+                            <div class="main__brandblockflexelcontentup">
+                                <a href="#" class="main__brandblocklink">food</a>
+                            </div>
+                            <div class="main__brandblockflexelcontentdowm">
+                                <h2 class="main__brandblocksubtitle">сыры на красивых картинках из интернета:<br>какие они на вкус?</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__brandblockflexel">
+                        <div class="main__brandblockflexelcontent">
+                            <div class="main__brandblockflexelcontentup">
+                                <a href="#" class="main__brandblocklink">lifestyle</a>
+                                <a href="#" class="main__brandblocklink">travel</a>
+                            </div>
+                            <div class="main__brandblockflexelcontentdowm">
+                                <h2 class="main__brandblocksubtitle">Собираемся в первый <br> поход в горы</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__brandblockflexel">
+                        <div class="main__brandblockflexelcontent">
+                            <div class="main__brandblockflexelcontentup">
+                                <a href="#" class="main__brandblocklink">food</a>
+                                <a href="#" class="main__brandblocklink">health</a>
+                            </div>
+                            <div class="main__brandblockflexelcontentdowm">
+                                <h2 class="main__brandblocksubtitle">Сейчас в тренде: сколько витамина c в лимонах?</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__mainblock">
+                <div class="main__mainblockflexcont">
+                    <div class="main__mainblockeflexel">
+                        <div class="main__mainblockeflexell">
+                            <picture class="main__picturecontainer">
+                                <source srcset="./pics/mainpic/flexmainpic/beach.avif" type="image/avif">
+                                <source srcset="../pics/mainpic/flexmainpic/beach.webp" type="image/webp">
+                                <img src="../pics/mainpic/flexmainpic/beach.png" class="main__pic" alt="Beach">
+                            </picture>
+                        </div>
+                        <div class="main__mainblockflexelr">
+                            <div class="main__mainblockflexelrtop">
+                                <a href="#" class="main__mainblockflexelrtoplink">travel</a>
+                                <a href="#" class="main__mainblockflexelrtoplink">health</a>
+                            </div>
+                            <h2 class="main__mainblockeflexelrtitle">
+                                10 мест, ради которых стоит
+                                проснуться на рассвете
+                            </h2>
+                            <div class="main__mainblockflexelrmain">
+                                <time class="main__mainblockflexelrmaindate" datetime="2019-06-10">10 июня 2019</time>
+                                <h3 class="main__mainblockflexelrmaintext">Неизвестный автор</h3>
+                            </div>
+                            <p class="main__mainblockflexelrtext">
+                                Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
+                            </p>
+                        </div>
+                        <!-- <div class="main__mainblockflexline"></div> -->
+                    </div>
+                    <div class="main__mainblockeflexel">
+                        <div class="main__mainblockeflexell">
+                            <picture class="main__picturecontainer">
+                                <source srcset="./pics/mainpic/flexmainpic/yoga.avif" type="image/avif">
+                                <source srcset=".../pics/mainpic/flexmainpic/yoga.webp" type="image/webp">
+                                <img src="../pics/mainpic/flexmainpic/yoga.png" class="main__pic" alt="Yoga">
+                            </picture>
+                        </div>
+                        <div class="main__mainblockflexelr">
+                            <div class="main__mainblockflexelrtop">
+                                <a href="#" class="main__mainblockflexelrtoplink">health</a>
+                                <a href="#" class="main__mainblockflexelrtoplink">lifestyle</a>
+                            </div>
+                            <h2 class="main__mainblockeflexelrtitle">
+                                ЙОга для начинающих в
+                                домашних условиях
+                            </h2>
+                            <div class="main__mainblockflexelrmain">
+                                <time class="main__mainblockflexelrmaindate" datetime="2019-06-10">10 июня 2019</time>
+                                <h3 class="main__mainblockflexelrmaintext">Неизвестный автор</h3>
+                            </div>
+                            <p class="main__mainblockflexelrtext">
+                                Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__mainblockeflexel">
+                        <div class="main__mainblockeflexell">
+                            <picture class="main__picturecontainer">
+                                <source srcset="./pics/mainpic/flexmainpic/festival.avif" type="image/avif">
+                                <source srcset="../pics/mainpic/flexmainpic/festival.webp" type="image/webp">
+                                <img src="../pics/mainpic/flexmainpic/festival.png" class="main__pic" alt="Festival">
+                            </picture>
+                        </div>
+                        <div class="main__mainblockflexelr">
+                            <div class="main__mainblockflexelrtop">
+                                <a href="#" class="main__mainblockflexelrtoplink">music</a>
+                            </div>
+                            <h2 class="main__mainblockeflexelrtitle">
+                                Лучшие музыкальные
+                                фестивали этого лета
+                            </h2>
+                            <div class="main__mainblockflexelrmain">
+                                <time class="main__mainblockflexelrmaindate" datetime="2019-06-10">10 июня 2019</time>
+                                <h3 class="main__mainblockflexelrmaintext">Неизвестный автор</h3>
+                            </div>
+                            <div class="main__mainblockflexelrfestival">
+                                <p class="main__mainblockflexelrtext">
+                                    Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
+                                </p>
+                                <p class="main__mainblockflexelrtext">
+                                    Мы составили список лучших летних фестивалей по всему миру.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mainblockeflexel">
+                        <div class="main__mainblockeflexell">
+                            <picture class="main__picturecontainer">
+                                <source srcset="./pics/mainpic/flexmainpic/cook.avif" type="image/avif">
+                                <source srcset="../pics/mainpic/flexmainpic/cook.webp" type="image/webp">
+                                <img src="../pics/mainpic/flexmainpic/cook.png" class="main__pic" alt="Cook">
+                            </picture>
+                        </div>
+                        <div class="main__mainblockflexelr">
+                            <div class="main__mainblockflexelrtop">
+                                <a href="#" class="main__mainblockflexelrtoplink">lifestyle</a>
+                                <a href="#" class="main__mainblockflexelrtoplink">food</a>
+                            </div>
+                            <h2 class="main__mainblockeflexelrtitle">
+                                Наукоёмкий подход к
+                                кулинарии
+                            </h2>
+                            <div class="main__mainblockflexelrmain">
+                                <time class="main__mainblockflexelrmaindate" datetime="2019-06-10">10 июня 2019</time>
+                                <h3 class="main__mainblockflexelrmaintext">Неизвестный автор</h3>
+                            </div>
+                            <p class="main__mainblockflexelrtext">
+                                Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__mainblockeflexel">
+                        <div class="main__mainblockeflexell">
+                            <picture class="main__picturecontainer">
+                                <source srcset="./pics/mainpic/flexmainpic/pillow.avif" type="image/avif">
+                                <source srcset="../pics/mainpic/flexmainpic/pillow.webp" type="image/webp">
+                                <img src="../pics/mainpic/flexmainpic/pillow.png" class="main__pic" alt="Pillow">
+                            </picture>
+                        </div>
+                        <div class="main__mainblockflexelr">
+                            <div class="main__mainblockflexelrtop">
+                                <a href="#" class="main__mainblockflexelrtoplink">lifestyle</a>
+                                <a href="#" class="main__mainblockflexelrtoplink">interior</a>
+                                <a href="#" class="main__mainblockflexelrtoplink">art</a>
+                            </div>
+                            <h2 class="main__mainblockeflexelrtitle">
+                                делаем модные принты на
+                                подушках для интерьера
+                            </h2>
+                            <div class="main__mainblockflexelrmain">
+                                <time class="main__mainblockflexelrmaindate" datetime="2019-06-10">10 июня 2019</time>
+                                <h3 class="main__mainblockflexelrmaintext">Неизвестный автор</h3>
+                            </div>
+                            <p class="main__mainblockflexelrtext">
+                                Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__shop">
+                        <section class="main__shoptitleblock">
+                            <h2 class="main__shoptitle">наши изделия</h2>
+                            <div class="main__line main__shopline"></div>
+                        </section>
+                        <div class="main__shopflexcont">
+                            <div class="main__shopflexcontel">
+                                <picture class="main__shopflexcontpic">
+                                    <source srcset="./pics/mainpic/flexfootpic/pillowtovar.avif" type="image/avif">
+                                    <source srcset="./pics/mainpic/flexfootpic/pillowtovar.webp" type="image/webp">
+                                    <img src="./pics/mainpic/flexfootpic/pillowtovar.png" class="main__shoppic" alt="PillowTovar">
+                                </picture>
+                                <div class="main__shopflexblock">
+                                    <div class="main__shopflexblocktext">
+                                        <h3 class="main__shopflexblocktitle">подушка на диван</h3>
+                                        <p class="main__shopflextext">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="main__shopflextexthigh">здесь</a>.</p>
+                                    </div>
+                                    <div class="main__shopflexpriceblock">
+                                        <div class="main__shopflexprice">
+                                            <p class="main__shopflexoldprice">1000 Р</p>
+                                            <p class="main__shopflexnewprice">800 Р</p>
+                                        </div>
+                                        <a href="#" class="main__shoplink">в магазин</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__shopflexcontel">
+                                <picture class="main__shopflexcontpic">
+                                    <source srcset="./pics/mainpic/flexfootpic/dolltovar.avif" type="image/avif">
+                                    <source srcset="./pics/mainpic/flexfootpic/dolltovar.webp" type="image/webp">
+                                    <img src="./pics/mainpic/flexfootpic/dolltovar.png" class="main__shoppic" alt="RabbitTovar">
+                                </picture>
+                                <div class="main__shopflexblock">
+                                    <div class="main__shopflexblocktext">
+                                        <h3 class="main__shopflexblocktitle">кукла "Зайчик"</h3>
+                                        <p class="main__shopflextext">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="main__shopflextexthigh">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+                                    </div>
+                                    <div class="main__shopflexpriceblock">
+                                        <div class="main__shopflexprice">
+                                            <p class="main__shopflexnewprice main__shopflexnewprice2">3500 Р</p>
+                                        </div>
+                                        <a href="#" class="main__shoplink">в магазин</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__shopflexcontel">
+                                <picture class="main__shopflexcontpic">
+                                    <source srcset="./pics/mainpic/flexfootpic/frametovar.avif" type="image/avif">
+                                    <source srcset="./pics/mainpic/flexfootpic/frametovar.webp" type="image/webp">
+                                    <img src="./pics/mainpic/flexfootpic/frametovar.png" class="main__shoppic" alt="PillowTovar">
+                                </picture>
+                                <div class="main__shopflexblock">
+                                    <div class="main__shopflexblocktext">
+                                        <h3 class="main__shopflexblocktitle">Шестиугольная рамка</h3>
+                                        <p class="main__shopflextext">Необычная рамка для украшения дома из видео <a href="#" class="main__shopflextexthigh">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+                                    </div>
+                                    <div class="main__shopflexpriceblock">
+                                        <div class="main__shopflexprice">
+                                            <p class="main__shopflexoldprice">500 Р</p>
+                                            <p class="main__shopflexnewprice">400 Р</p>
+                                        </div>
+                                        <a href="#" class="main__shoplink">в магазин</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="main__foot">
+                        <div class="main__footmain">
+                            <div class="main__footmaincontainer">
+                                <a href="#" class="main__footmainicon">
+                                    <picture>
+                                        <source srcset="./pics/mainpic/footericons/ballicon.avif" type="image/avif">
+                                        <source srcset="./pics/mainpic/footericons/ballicon.webp" type="image/webp">
+                                        <img src="./pics/mainpic/footericons/ballicon.png" class="main__footicon" alt="ball">
+                                    </picture>
+                                </a>
+                                <a href="#" class="main__footmainicon">
+                                    <picture>
+                                        <source srcset="./pics/mainpic/footericons/picon.avif" type="image/avif">
+                                        <source srcset="./pics/mainpic/footericons/picon.webp" type="image/webp">
+                                        <img src="./pics/mainpic/footericons/picon.png" class="main__footicon" alt="picon">
+                                    </picture>
+                                </a>
+                                <a href="#" class="main__footmainicon">
+                                    <picture>
+                                        <source srcset="./pics/mainpic/footericons/ticon.avif" type="image/avif">
+                                        <source srcset="./pics/mainpic/footericons/ticon.webp" type="image/webp">
+                                        <img src="./pics/mainpic/footericons/ticon.png" class="main__footicon" alt="ticon">
+                                    </picture>
+                                </a>
+                            </div>                            
+                        </div>
+                        <section class="main__footfoot">
+                            <h4 class="main__footcopyright">Copyright © 2009–2019 City Blog LLC.</h4>
+                        </section>
+                    </footer>
+                </div>
+                <aside class="aside">
+                    <header class="aside__header">
+                        <div class="aside__headertitlecontainer">
+                            <h2 class="aside__title">новые посты</h2>
+                            <div class="aside__line"></div>
+                        </div>
+                    </header>
+                    <div class="aside__main">
+                        <div class="aside__mainflexcont">
+                            <div class="aside__mainflexel">
+                                <div class="aside__mainflexell">
+                                    <picture class="aside__picturecontainer">
+                                        <source srcset="./pics/mainpic/flexasidepic/beachsmall.avif" type="image/avif">
+                                        <source srcset="../pics/mainpic/flexasidepic/beachsmall.webp" type="image/webp">
+                                        <img src="../pics/mainpic/flexasidepic/beachsmall.png" class="aside__pic" alt="BeachS">
+                                    </picture>
+                                </div>
+                                <div class="aside__mainflexelr">
+                                    <time class="aside__posttime" datetime="2019-06-14">14 июня 2019</time>
+                                    <h2 class="aside__posttitle">10 мест, ради которых <br> стоит проснуться</h2>
+                                </div>
+                            </div>
+                            <div class="aside__mainflexel">
+                                <div class="aside__mainflexell">
+                                    <picture class="aside__picturecontainer">
+                                        <source srcset="./pics/mainpic/flexasidepic/yogasmall.avif" type="image/avif">
+                                        <source srcset="../pics/mainpic/flexasidepic/yogasmall.webp" type="image/webp">
+                                        <img src="../pics/mainpic/flexasidepic/yogasmall.png" class="aside__pic" alt="YogaS">
+                                    </picture>
+                                </div>
+                                <div class="aside__mainflexelr">
+                                    <time class="aside__posttime" datetime="2019-06-14">14 июня 2019</time>
+                                    <h2 class="aside__posttitle">йога для домашних</h2>
+                                </div>
+                            </div>
+                            <div class="aside__mainflexel">
+                                <div class="aside__mainflexell">
+                                    <picture class="aside__picturecontainer">
+                                        <source srcset="./pics/mainpic/flexasidepic/balconysmall.avif" type="image/avif">
+                                        <source srcset="../pics/mainpic/flexasidepic/balconysmall.webp" type="image/webp">
+                                        <img src="../pics/mainpic/flexasidepic/balconysmall.png" class="aside__pic" alt="BalconyS">
+                                    </picture>
+                                </div>
+                                <div class="aside__mainflexelr">
+                                    <time class="aside__posttime" datetime="2019-06-14">14 июня 2019</time>
+                                    <h2 class="aside__posttitle">как мы превратили <br> классное место в <br> балкон</h2>
+                                </div>
+                            </div>
+                            <div class="aside__mainflexel">
+                                <div class="aside__mainflexell">
+                                    <picture class="aside__picturecontainer">
+                                        <source srcset="./pics/mainpic/flexasidepic/cooksmall.avif" type="image/avif">
+                                        <source srcset="../pics/mainpic/flexasidepic/cooksmall.webp" type="image/webp">
+                                        <img src="../pics/mainpic/flexasidepic/cooksmall.png" class="aside__pic" alt="CookS">
+                                    </picture>
+                                </div>
+                                <div class="aside__mainflexelr">
+                                    <time class="aside__posttime" datetime="2019-06-14">14 июня 2019</time>
+                                    <h2 class="aside__posttitle">кулинарный подход <br> к науке</h2>
+                                </div>
+                            </div>
+                            <div class="aside__mainflexel">
+                                <div class="aside__mainflexell">
+                                    <picture class="aside__picturecontainer">
+                                        <source srcset="./pics/mainpic/flexasidepic/hairsmall.avif" type="image/webp">
+                                        <source srcset="../pics/mainpic/flexasidepic/hairsmall.webp" type="image/webp">
+                                        <img src="../pics/mainpic/flexasidepic/hairsmall.png" class="aside__pic" alt="HairS">
+                                    </picture>
+                                </div>
+                                <div class="aside__mainflexelr">
+                                    <time class="aside__posttime" datetime="2019-06-14">14 июня 2019</time>
+                                    <h2 class="aside__posttitle">лучшие прически для распущенных волос</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside__findblock">
+                            <input type="text" class="aside__findblockseatch" placeholder="Найти...">
+                            <button class="aside__findblocksearchbtn">
+                                <picture class="aside__findblocksearchbtnicon">
+                                    <source srcset="./pics/mainpic/flexasidepic/search.webp" type="image/webp">
+                                    <img src="../pics/mainpic/flexasidepic/search.png" class="aside__pic" alt="searchic">
+                                </picture>
+                            </button>
+                        </div>
+                        <div class="aside__subscrblock">
+                            <header class="aside__subscrblockheader">
+                                <h2 class="aside__title">рассылка</h2>
+                                <div class="aside__line aside__line2"></div>
+                            </header>
+                            <div class="aside__subscrblockmain">
+                                <input type="text" class="aside__findblockseatch aside__findblockseatch2" placeholder="Ваш email-адрес">
+                                <button class="aside__subscrblockmainbtn">подписаться</button>
+                            </div>
+                        </div>
+                        <footer class="aside__footer">
+                            <div class="aside__footertitleblock">
+                                <h2 class="aside__title">теги</h2>
+                                <div class="aside__line aside__line2"></div>
+                            </div>
+                            <div class="aside__footerflexcontainer">
+                                <div class="aside__footerflexline">
+                                    <div class="aside__footerflexel">
+                                        <a href="/fashion" class="aside__footerflexellink">fashion</a>
+                                    </div>
+                                    <div class="aside__footerflexel">
+                                        <a href="/music" class="aside__footerflexellink">music</a>
+                                    </div>
+                                    <div class="aside__footerflexel">
+                                        <a href="/lifestyle" class="aside__footerflexellink">lifestyle</a>
+                                    </div>
+                                </div>
+                                <div class="aside__footerflexline">
+                                    <div class="aside__footerflexel">
+                                        <a href="/art" class="aside__footerflexellink">art</a>
+                                    </div>
+                                    <div class="aside__footerflexel">
+                                        <a href="/interior" class="aside__footerflexellink">interior</a>
+                                    </div>
+                                    <div class="aside__footerflexel">
+                                        <a href="/travel" class="aside__footerflexellink">travel</a>
+                                    </div>
+                                </div>
+                                <div class="aside__footerflexline">
+                                    <div class="aside__footerflexel">
+                                        <a href="/food" class="aside__footerflexellink">food</a>
+                                    </div>
+                                    <div class="aside__footerflexel">
+                                        <a href="/health" class="aside__footerflexellink">health</a>
+                                    </div>
+                                </div>
+                            </div>                                                   
+                        </footer>
+                        <footer class="aside__footerfoot">
+                            <section class="aside__subscrblockheader">
+                                <h2 class="aside__title aside__title2">темы</h2>
+                                <div class="aside__line aside__line2"></div>
+                            </section>
+                            <div class="aside__footerfootcontainer">
+                                <div class="aside__footerfootflexel">
+                                    <div class="aside__footefootflexellinkbox">
+                                        <a href="#" class="aside__footerfootflexellink">Красота<sup class="aside__footerfootflexelsup">12</sup></a>
+                                    </div>
+                                    <div class="aside__footerfootflexelline"></div>
+                                </div>
+                                <div class="aside__footerfootflexel">
+                                    <div class="aside__footefootflexellinkbox">
+                                        <a href="#" class="aside__footerfootflexellink">Здоровье<sup class="aside__footerfootflexelsup">4</sup></a>
+                                    </div>
+                                    <div class="aside__footerfootflexelline"></div>
+                                </div>
+                                <div class="aside__footerfootflexel">
+                                    <div class="aside__footefootflexellinkbox">
+                                        <a href="#" class="aside__footerfootflexellink">Образ жизни<sup class="aside__footerfootflexelsup">145</sup></a>
+                                    </div>
+                                    <div class="aside__footerfootflexelline"></div>
+                                </div>
+                                <div class="aside__footerfootflexel">
+                                    <div class="aside__footefootflexellinkbox">
+                                        <a href="#" class="aside__footerfootflexellink">Музыка<sup class="aside__footerfootflexelsup">28</sup></a>
+                                    </div>
+                                    <div class="aside__footerfootflexelline"></div>
+                                </div>
+                                <div class="aside__footerfootflexel">
+                                    <div class="aside__footefootflexellinkbox">
+                                        <a href="#" class="aside__footerfootflexellink">Спорт<sup class="aside__footerfootflexelsup">62</sup></a>
+                                    </div>
+                                    <div class="aside__footerfootflexelline"></div>
+                                </div>
+                                <div class="aside__footerfootflexel">
+                                    <div class="aside__footefootflexellinkbox">
+                                        <a href="#" class="aside__footerfootflexellink">Йога<sup class="aside__footerfootflexelsup">8</sup></a>
+                                    </div>
+                                    <div class="aside__footerfootflexelline"></div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </aside>
+            </section>
+        </main>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>

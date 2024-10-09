@@ -1,0 +1,590 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &__brandblock {
+        width: 100%;
+        max-height: 443px;
+        padding-top: 55px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+    }
+
+
+    &__brandblocktitle {
+        font-size: 1rem;
+        font-family: 'sansb';
+
+    }
+
+    &__brandblockline {
+        width: 67px;
+        height: 3px;
+        opacity: 0.4;
+        background-color: #b59f5b;
+        position: relative;
+    }
+
+    &__brandblockflexcont {
+        width: 100%;
+        max-height: 330px;
+        position: relative;
+        top: 24px;
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__brandblockflexel {
+        width: 410px;
+        height: 320px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 16px;
+    }
+
+
+    &__brandblockflexel:nth-child(1) {
+        background-image: url("../pics/mainpic/flexheadpic/plant.avif"), 
+                          url("../pics/mainpic/flexheadpic/plant.webp"), 
+                          url("../pics/mainpic/flexheadpic/plant.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &__brandblockflexel:nth-child(2) {
+        background-image: url("../pics/mainpic/flexheadpic/cheese.avif"), 
+                          url("../pics/mainpic/flexheadpic/cheese.webp"), 
+                          url("../pics/mainpic/flexheadpic/cheese.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &__brandblockflexel:nth-child(3) {
+        background-image: url("../pics/mainpic/flexheadpic/mountain.avif"), 
+                          url("../pics/mainpic/flexheadpic/mountain.webp"), 
+                          url("../pics/mainpic/flexheadpic/mountain.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__brandblockflexel:nth-child(4) {
+        background-image: url("../pics/mainpic/flexheadpic/lemon.avif"), 
+                          url("../pics/mainpic/flexheadpic/lemon.webp"), 
+                          url("../pics/mainpic/flexheadpic/lemon.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+
+    &__brandblockflexelcontent {
+        width: 371px;
+        min-height: 146px;
+        background-color: rgba(0,0,0,0.0);
+        box-shadow: 0 0 0 3px rgba(181, 159, 91, 0.6); /* Создание полупрозрачной рамки */
+        padding: 35px 38px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__brandblockflexelcontent:nth-child(2) {
+        height: 0px;
+    }
+    
+
+
+    &__brandblockflexelcontentup {
+        display: flex;
+        gap: 20px;
+    }
+
+
+    &__brandblocklink, &__mainblockflexelrtoplink {
+        font-size: 0.7rem;
+        color: #b59f5b;
+        font-family: 'sansb';
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    &__brandblocklink:hover, &__brandblocklink:focus, &__mainblockflexelrtoplink:hover, &__mainblockflexelrtoplink:focus {
+        transform: perspective(400px) translateZ(20px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    &__brandblocksubtitle {
+        color: white;
+        font-size: 1rem;
+        font-family: 'sansb';
+    }
+
+
+
+
+
+
+
+
+
+
+
+    &__mainblock {
+        width: 100%;
+        min-height: 2700px;
+        // background-color: #333;
+        display: flex;
+        justify-content: center;
+        padding-top: 74px;
+        padding-left: 297px;
+        position: relative;
+        top: 24px;
+    }
+
+    &__mainblockflexcont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__mainblockeflexel {
+        max-width: 785px;
+        max-height: 310px;
+        display: flex;
+        gap: 30px;
+    }
+
+
+    &__mainblockflexelr {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+
+    &__mainblockflexelrtop {
+        display: flex;
+        gap: 17px;
+        padding-left: 5px;
+    }
+
+
+
+    &__mainblockeflexelrtitle {
+        font-family: 'sansb';
+        font-size: 1rem;
+        padding-left: 5px;
+    }
+
+    &__mainblockflexelrmain {
+        position: relative;
+        display: flex;
+        top: 22px;
+        left: 4px;
+        gap: 14px;
+    }
+
+
+    &__mainblockflexelrmaindate {
+        font-size: 0.6rem;
+        font-family: 'sansr';
+        color: #888888;
+    }
+
+    &__mainblockflexelrmaintext {
+        font-size: 0.6rem;
+        text-transform: none;
+        font-family: 'sansb';
+    }
+
+
+    &__mainblockflexelrtext {
+        padding-top: 65px;
+        padding-left: 5px;
+        font-size: 0.75rem;
+        font-family: 'sansr';
+        line-height: 22px;
+    }
+
+
+    &__mainblockflexelrfestival {
+        display: flex;
+        flex-direction: column;
+        padding-top: 65px;
+        padding-left: 5px;
+        gap: 20px;
+    }
+    
+    &__mainblockflexelrfestival p {
+        padding: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    &__shop {
+        max-width: 100%;
+        max-height: 499px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 454px;
+        margin-top: 12px;
+    }
+
+    &__shoptitleblock {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 50px;
+    }
+
+    &__shoptitle {
+        font-size: 1rem;
+        font-family: 'sansb';
+    }
+
+    &__line {
+        width: 69px;
+        height: 3px;
+        opacity: 0.60;
+        background: rgba(181, 159, 91, 1);
+        margin-left: 50px;
+    }
+
+    &__shopflexcont {
+        width: 100%;
+        max-height: 267px;
+        display: flex;
+        gap: 60px;
+        align-items: start;
+        justify-content: center;
+        position: relative;
+        right: 300px;
+
+    }
+
+    &__shopflexcontel {
+        display: flex;
+        flex-direction: column;
+        width: 347.1px;
+        height: 439.1px;
+        padding: 24px;
+    }
+
+
+    &__shoppic {
+        max-width: 300px;
+        max-height: 204.2px;
+        
+    }
+
+    &__shopflexblock {
+        width: 347px;
+        height: 287px;
+        border-color: rgba(181, 159, 91, 1);
+        border-width: 3px;
+        border-style: solid;
+        position: relative;
+        bottom: 30px;
+        right: 21px;
+        padding: 45px 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+        padding-bottom: 75px;
+    }
+
+    &__shopflexblocktext {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    &__shopflexblocktitle {
+        font-family: 'sansb';
+        font-size: 1rem;
+    }
+
+
+    &__shopflextext {
+        font-size: 0.75rem;
+        font-family: 'sansr';
+    }
+
+    &__shopflextexthigh {
+        color: rgba(181, 159, 91, 1);
+        font-size: 0.75rem;
+        text-transform: none;
+        transition: 0.7s;
+    }
+
+    &__shopflextexthigh:hover {
+        transform: perspective(400px) translateZ(20px);
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+    &__shopflexpriceblock {
+        display: flex;
+        gap: 90px;
+    }
+
+    &__shopflexprice {
+        line-height: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__shopflexoldprice, &__shopflexnewprice {
+        font-family: 'sansb';
+        font-size: 0.75rem;
+    }
+
+    &__shopflexoldprice  {
+        text-decoration: line-through;
+    }
+
+    &__shopflexnewprice {
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+
+    &__shopflexnewprice2 {
+        padding-top: 20px;
+    }
+
+    &__shopbutton {
+        margin-left: 20px;
+        margin-top: -5px;
+        background-color: rgba(181, 159, 91, 1);
+        border: none;
+        transition: 0.7s;
+        text-wrap: nowrap;
+
+    }
+
+    &__shopbutton:hover {
+        background: rgba(50, 50, 50, 1);
+    }
+    &__shopbutton:focus {
+        background: rgba(50, 50, 50, 1);
+    }
+
+    &__shoplink {
+        background-color: rgba(181, 159, 91, 1);
+        color: white;
+        font-family: 'sansb';
+        transition: 0.7s;
+        width: 140.1px;
+        height: 48.3px;
+        font-size: 0.7rem;
+        padding: 15px 25px;
+
+        &:hover {
+            background: rgba(50, 50, 50, 1)
+        }
+        &:focus {
+            background: rgba(50, 50, 50, 1)
+        }
+    }
+
+
+    
+
+
+
+
+
+    &__foot {
+        max-width: 1170px;
+        max-height: 169.8px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 233px;
+        left: 10px;
+        gap: 70px;
+    }
+
+
+
+    &__footmain {
+        max-width: 100%;
+        height: 82.8px;
+        background: rgba(244, 247, 246, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 590px;
+    }
+
+    &__footfoot {
+        text-align: center;
+    }
+
+    &__footcopyright {
+        text-transform: none;
+        color: #999999;
+        font-size: 0.6rem;
+        font-family: 'sansb';
+        padding-left: 15px;
+    }
+
+    &__footmaincontainer {
+        width: 110px;
+        height: 20px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    &__footmainicon {
+        transition: 0.7s;
+    }
+
+    &__footmainicon:hover {
+        transform: scale(1.07);
+    }
+    &__footmainicon:focus {
+        transform: scale(1.07);
+    }
+
+
+    
+}
+
+
+// /////////////////////////////////////////////////////////////////
+
+@media (max-width: 1040px) {
+
+
+
+    .main {
+        max-width: 968px;
+        position: relative;
+        height: 5500px;
+        align-items: center;
+
+
+    &__mainblock {
+        top: 180px;
+        display: flex;
+        gap: 450px;
+    }
+
+    &__mainblockflexcont {
+        gap: 350px;
+        width: 396.3px;
+        height: 2911px;
+    }
+
+    &__mainblockeflexel {
+        flex-direction: column;
+        width: 301.9px;
+        height: 302.4px;
+    }
+
+
+    &__brandblockflexel {
+        width: calc(50% - 6px); 
+        height: 247px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 16px;
+        padding: 50px 10px;
+    }
+
+    &__brandblockflexelcontent {
+        padding: 10px 0px;
+        width: 343.9px;
+        height: 135.8px;
+    }
+
+
+
+
+    &__shop {
+        max-width: 100%;
+        max-height: 979px;
+        margin: 0;
+        position: relative;
+        top: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 500px;
+    }
+
+    &__shopflexcont {
+        display: grid; /* Используем grid */
+        grid-template-columns: repeat(2, 1fr); /* Две колонки */
+        gap: 30px; /* Отступ между карточками */
+        width: 100%;
+        right: 50px;
+        transform: scale(0.9);
+        justify-content: center;
+        align-items: start;
+
+    }
+    
+    &__shopflexcontel {
+        /* Можно не указывать ширину, так как grid будет управлять размерами */
+        height: 439.1px; /* Высота карточек */
+        padding: 34px; /* Отступ внутри карточек */
+    }
+    
+    /* Для третьей карточки */
+    &__shopflexcontel:nth-child(3) {
+        grid-column: 1 / -1; /* Эта карточка занимает всю ширину */
+    }
+    
+
+    &__shoptitleblock {
+        padding-right: 150px;
+        text-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    &__footmain {
+        padding: 0px;
+        position: relative;
+        top: 100px;
+    }
+
+    &__shopline {
+        margin-right: 50px;
+    }
+
+
+
+    }
+}

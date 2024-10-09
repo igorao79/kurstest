@@ -1,0 +1,80 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+//     background:
+//       conic-gradient(from -60deg at 50% calc(100%/3),#e8e8e8 0 120deg,#0000 0),
+//       conic-gradient(from 120deg at 50% calc(200%/3),#e8e8e8 0 120deg,#0000 0),
+//       conic-gradient(from  60deg at calc(200%/3),#e8e8e8 60deg,#b6b6b6 0 120deg,#0000 0),
+//       conic-gradient(from 180deg at calc(100%/3),#828282 60deg,#e8e8e8 0 120deg,#0000 0),
+//       linear-gradient(90deg,#828282 calc(100%/6),#b6b6b6 0 50%,
+//       #828282 0 calc(500%/6), #b6b6b6 0);
+// background-size: 62px 36px;
+
+background:
+      conic-gradient(at 50% 25%,#0000 75%,#f4f4f4 0),conic-gradient(at 50% 25%,#0000 75%,#f4f4f4 0) 18px 18px,
+      conic-gradient(at 50% 25%,#0000 75%,#f4f4f4 0) calc(2*18px) calc(2*18px),
+      conic-gradient(at 50% 25%,#0000 75%,#f4f4f4 0) calc(3*18px) calc(3*18px),
+      repeating-linear-gradient(135deg,#b6b6b6 0 12.5%,#e8e8e8 0 25%);
+background-size: calc(4 * 18px) calc(4*18px);
+max-width: 2000px;
+
+
+}
+
+@media (max-width: 1040px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+}
+
+img {
+    vertical-align: top;
+}
+
+html {
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+// ////////////////////////////////////////////////
+
+@font-face {
+   font-family: 'sansb';
+   src: url('../fonts/OpenSans-Bold.woff2') format('wofft2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'sansr';
+   src: url('../fonts/OpenSans-Regular.woff2') format('wofft2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+// ///////////////////////////////////////////////////
+
+

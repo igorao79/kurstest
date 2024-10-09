@@ -1,0 +1,317 @@
+.aside {
+    width: 404px;
+    height: 1710px;
+    // background-color: purple;
+    position: relative;
+    right: 385px;
+    bottom: 14px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: start;
+
+
+
+    &__header {
+        width: 206px;
+        height: 39px;
+    }
+
+    &__headertitlecontainer {
+        max-width: 123px;
+        max-height: 72px;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 11px;
+        margin-left: 80px;
+    }
+
+    &__title {
+        font-size: 0.7rem;
+        font-family: 'sansb';
+    }
+
+    &__line {
+        width: 69px;
+        height: 3px;
+        opacity: 0.60;
+        background: rgba(181, 159, 91, 1)
+    }
+
+    &__main {
+        width: 100%;
+        max-height: 585px;
+        position: relative;
+        top: 24px;
+        left: 3px;
+    }
+
+    &__mainflexcont {
+        max-height: 333px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__mainflexel {
+        width: 100%;
+        max-height: 60px;
+        display: flex;
+        gap: 5px;
+    }
+
+    &__mainflexelr {
+        width: 100%;
+        position: relative;
+        bottom: 7px;
+        left: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__posttime {
+        font-size: 0.6rem;
+        font-family: 'sansr';
+        opacity: 0.54;
+    }
+
+    &__posttitle {
+        font-size: 0.7rem;
+        font-family: 'sansb';
+    }
+
+    &__findblock {
+        max-width: 270px;
+        max-height: 48px;
+        position: relative;
+        display: flex;
+        top: 165px;
+        gap: 0px;
+        background: rgba(244, 247, 246, 1);
+    }
+    
+    &__findblockseatch {
+        padding-left: 150px;
+        font-size: 0.65rem;
+        font-family: 'sansr';
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 52px;
+        border: none;
+        background: rgba(244, 247, 246, 1);
+    }
+
+    &__findblockseatch:focus {
+        border: 1px solid rgba(181, 159, 91, 1);;
+    }
+
+    &__findblocksearchbtn {
+        width: 48px;
+        height: 48px;
+        background: rgba(181, 159, 91, 1);
+        border: none;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
+    &__findblocksearchbtn:hover {
+        background: rgba(50, 50, 50, 1);
+    }
+    &__findblocksearchbtn:focus {
+        background: rgba(50, 50, 50, 1);
+    }
+
+    &__subscrblock {
+        max-width: 270px;
+        max-height: 200px;
+        position: relative;
+        top: 222px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__subscrblockheader {
+        padding-left: 95px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__line2 {
+        margin-left: 7px;
+    }
+
+    &__subscrblockmain {
+        position: relative;
+        top: 21px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__findblockseatch2 {
+        padding-right: 100px;
+    }
+
+    &__subscrblockmainbtn {
+        text-transform: uppercase;
+        max-width: 100%;
+        max-height: 48px;
+        padding: 15px 82px;
+        color: white;
+        background: rgba(181, 159, 91, 1);
+        border: none;
+        font-family: 'sansb';
+        font-size: 0.7rem;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
+    &__subscrblockmainbtn:hover {
+        background: rgba(50, 50, 50, 1)
+    }
+    
+    &__subscrblockmainbtn:focus {
+        background: rgba(50, 50, 50, 1)
+    }
+
+
+    &__footer {
+        max-width: 100%;
+        max-height: 153px;
+        position: relative;
+        display: flex;
+        top: 298px;
+        flex-direction: column;
+        gap: 27px;
+    }
+
+    &__footertitleblock {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__footerflexcontainer {
+        max-width: 100%;
+        max-height: 102px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__footerflexline {
+        max-width: 100%;
+        max-height: 30px;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__footerflexel {
+        min-width: 59px;
+        border: 3px solid rgba(238, 238, 238, 1);
+        background: rgba(244, 243, 241, 0);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    &__footerflexellink {
+        font-family: 'sansb';
+        font-size: 0.6rem;
+        color: black;
+        transition: 0.7s;
+    }
+
+
+    &__footerflexellink:hover {
+        transform: scale(1.1);
+    }
+    &__footerflexellink:focus {
+        transform: scale(1.1);
+    }
+
+
+    &__footerfoot {
+        max-width: 100%;
+        max-height: 321px;
+        position: relative;
+        top: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title2 {
+        padding-left: 22px;
+    }
+
+    &__footerfootcontainer {
+        max-width: 271px;
+        max-height: 268px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 25px;
+        gap: 18px;
+    }
+
+    &__footerfootflexel {
+        width: 100%;
+        max-height: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__footerfootflexellink {
+        font-size: 0.7rem;
+        font-family: 'sansb';
+        color: black;
+        text-transform: none;
+        transition: 0.7s;
+    }
+
+    &__footerfootflexellink:hover {
+        transform: scale(1.07);
+    }
+    &__footerfootflexellink:focus {
+        transform: scale(1.07);
+    }
+
+    &__footefootflexellinkbox {
+        display: flex;
+        gap: 2px
+    }
+
+    &__footerfootflexelline {
+        width: 100%;
+        height: 1px;
+        background: rgba(238, 238, 238, 1);
+        opacity: 0.7;
+    }
+
+    &__footerfootflexelsup {
+        font-size: 0.6rem; /* Измените размер для визуального акцента */
+        color: #B59F5B;
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .aside {
+        width: 100%;  // или другое значение, подходящее для мобильных
+        height: auto; // позволяет блоку изменять высоту в зависимости от контента
+        right: 300;     // Убирает фиксированный сдвиг вправо
+        bottom: 0;    // Убирает фиксированный сдвиг вниз
+    }
+}
