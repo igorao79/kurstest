@@ -155,7 +155,7 @@
         position: relative;
         top: 24px;
         // background-color: white;
-        border: 1px solid black;
+        // border: 1px solid black;
     }
 
     &__mainblockflexcont {
@@ -660,7 +660,7 @@
     @media (max-width: 480px) {
 
         .page {
-            // overflow-x: hidden;
+            overflow-x: hidden;
 
         }
 
@@ -674,6 +674,8 @@
                 padding: 0;
                 padding-left: 12%;
             }
+
+            
 
             &__shopflexcont {
                 gap: 10px; /* Уменьшаем отступ между карточками */
@@ -706,10 +708,11 @@
                 flex-direction: column;
                 top: 200px;
                 width: 100%;
+                align-items: center;
             }
 
             &__brandblockflexel {
-                width: 400px;
+                width: 390px;
                 position: relative;
                 top: 50px;
             }
