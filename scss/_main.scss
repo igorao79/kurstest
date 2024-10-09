@@ -154,6 +154,8 @@
         padding-left: 297px;
         position: relative;
         top: 24px;
+        // background-color: white;
+        border: 1px solid black;
     }
 
     &__mainblockflexcont {
@@ -566,7 +568,7 @@
 
     &__shop {
         max-width: 100%;
-        max-height: 979px;
+        min-height: 979px;
         margin: 0;
         position: relative;
         top: 50px;
@@ -636,6 +638,7 @@
         &__mainblock {
             flex-direction: column; /* Меняем направление на колонку */
             gap: 30px; /* Уменьшаем отступы между блоками */
+            margin-top: 150%;
         }
         &__brandblockflexel {
             width: calc(40% - 6px); 
@@ -657,11 +660,21 @@
     @media (max-width: 480px) {
 
         .page {
-            overflow-x: hidden;
+            // overflow-x: hidden;
+
         }
 
 
         .main {
+
+
+            &__mainblock {
+                top: -7%;
+                flex-grow: 1;
+                padding: 0;
+                padding-left: 12%;
+            }
+
             &__shopflexcont {
                 gap: 10px; /* Уменьшаем отступ между карточками */
             }
@@ -673,24 +686,104 @@
                 
             }
 
-            &__mainblock {
-                top: 300px;
-                right: 0px;
-                padding: 90px;
-            }
 
             &__pic {
                 width: 95%;
             }
             
 
-            
+            &__mainblockflexcont {
+                position: relative;
+                top: 300px;
+            }
 
+            &__brandblock {
+
+            }
     
-            // &__brandblockflexcont {
-            //     flex-wrap: nowrap;
-            //     flex-direction: column;
-            // }
+            &__brandblockflexcont {
+                flex-wrap: nowrap;
+                flex-direction: column;
+                top: 200px;
+                width: 100%;
+            }
+
+            &__brandblockflexel {
+                width: 400px;
+                position: relative;
+                top: 50px;
+            }
+
+            &__brandblockline {
+                width: 67px;
+                height: 1px;
+                background-color: #b59f5b;
+                position: relative;
+                border: 1px solid #b59f5b;
+            }
+
+
+
+           
+
+
+
+            &__shop {
+                // border: 1px solid black;
+                min-height: 1900px;
+                width: 100%;
+                top: 1220px;
+                position: relative;
+                display: flex;
+                margin-left: 0;
+                margin-left: -43px;
+                left: 0;
+                right: 0;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                padding-left: 78%;
+
+            }
+
+            &__shopflexcont {
+                width: 80%;
+                max-height: 1567px;
+                display: flex;
+                gap: 60px;
+                align-items: start;
+                justify-content: center;
+                position: relative;
+                flex-direction: column;
+                right: 550px;
+                // border: 10px solid black;
+                margin-left: 500px;
+            }
+
+            &__shoptitleblock {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-right: 300%;
+
+
+            }
+
+
+
+
+
+            &__foot {
+                top: 650px;
+                padding-right: 30%;
+                gap: 120px;
+            }
+
+            &__footfoot {
+
+            }
+
+
         }
     }
 }

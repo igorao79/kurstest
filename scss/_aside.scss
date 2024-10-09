@@ -307,15 +307,36 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
 
 
     .aside {
         width: 100%;  // или другое значение, подходящее для мобильных
         height: auto; // позволяет блоку изменять высоту в зависимости от контента
-        right: 84px;
-        top: 400px;
+        right: 0px;
+        padding-top: 600px;
+        // margin-top: 600px;
+
+        &__title {
+            font-weight: 1000;
+            font-size: 0.8rem;
+        }
+
+        &__headertitlecontainer {
+            margin-left: 40%;
+        }
+
+
+
+        &__footer {
+
+        }
+
+
+        &__footertitleblock {
+           margin-right: 25%;
+        }
 
     }
 }

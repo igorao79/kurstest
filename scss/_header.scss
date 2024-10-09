@@ -204,7 +204,8 @@
     .header {
         align-items: center;
         justify-content: center;
-
+        max-height: 1000px;
+        background-color: white;
 
         &__logo {
             left: 0px;
