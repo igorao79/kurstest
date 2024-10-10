@@ -295,12 +295,20 @@ a {
     padding-left: 0%;
     max-height: 1000px;
     background-color: white;
+    font-size: 0.1rem;
   }
   .header__logo {
     position: absolute;
     right: 55%;
     bottom: 50%;
     scale: 1.2;
+  }
+  .header .header__title {
+    font-size: 1.1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10%;
   }
   .header__burgercontainer {
     gap: 0px;
@@ -1107,6 +1115,7 @@ a {
     position: relative;
     top: 10%;
     display: block;
+    right: 8%;
   }
 }
 .aside {

@@ -207,6 +207,7 @@
         padding-left: 0%;
         max-height: 1000px;
         background-color: white;
+        font-size: 0.1rem;
 
         &__logo {
             position: absolute;
@@ -214,6 +215,13 @@
             bottom: 50%;
             scale: 1.2;
         }
+
+        .header__title {
+            font-size: 1.1rem;
+            align-items: center;
+            padding: 10%;
+        }
+
 
         &__burgercontainer {
             gap: 0px;
