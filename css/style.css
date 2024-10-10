@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0), conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 18px 18px, conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 36px 36px, conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 54px 54px, repeating-linear-gradient(135deg, #b6b6b6 0 12.5%, #e8e8e8 0 25%);
   background-size: 72px 72px;
@@ -288,22 +292,27 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 0%;
     max-height: 1000px;
     background-color: white;
   }
   .header__logo {
-    left: 0px;
+    position: absolute;
+    right: 55%;
+    bottom: 50%;
+    scale: 1.2;
   }
   .header__burgercontainer {
-    margin-right: 250%;
-    padding-left: 50%;
     gap: 0px;
+  }
+  .header__burger {
+    position: absolute;
+    right: 55%;
+    bottom: 50%;
   }
   .header__title {
     font-size: 1.2rem;
     line-height: normal;
-    padding-left: 50%;
-    margin-right: 50%;
   }
   .header__burger {
     position: relative;
@@ -475,6 +484,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  position: relative;
 }
 .main__mainblockeflexel {
   max-width: 785px;
@@ -552,6 +562,9 @@ a {
 }
 .main__mainblockflexelrfestival p {
   padding: 0;
+}
+.main__delline {
+  display: none;
 }
 .main__shop {
   max-width: 100%;
@@ -977,16 +990,16 @@ a {
   }
 }
 @media (max-width: 1040px) and (max-width: 480px) {
-  .page {
-    overflow-x: hidden;
-  }
   .main__mainblock {
-    top: -7%;
+    top: -3.5%;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     padding: 0;
     padding-left: 12%;
+  }
+  .main__mainblockflexcont {
+    gap: 300px;
   }
   .main__shopflexcont {
     gap: 10px; /* Уменьшаем отступ между карточками */
@@ -1086,6 +1099,14 @@ a {
     top: 650px;
     padding-right: 30%;
     gap: 120px;
+  }
+  .main__delline {
+    width: 329.3px;
+    height: 3.2px;
+    background: rgb(238, 238, 238);
+    position: relative;
+    top: 10%;
+    display: block;
   }
 }
 .aside {
@@ -1454,10 +1475,10 @@ a {
 
 @media (max-width: 480px) {
   .aside {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 100%;
     right: 0px;
-    padding-top: 600px;
+    top: 400px;
   }
   .aside__title {
     font-weight: 1000;
@@ -1466,16 +1487,14 @@ a {
   .aside__headertitlecontainer {
     margin-left: 40%;
   }
-  .aside__footerflexcontainer {
-    display: grid;
-    grid-template-columns: repeat(2, 200px); /* 4 колонки */
-    grid-template-rows: repeat(5, 10px); /* 2 строки */
-    gap: 20px; /* Отступы между элементами */
-    width: 100%;
-  }
   .aside__footerflexel {
     text-align: center; /* Центрирование содержимого */
     padding: 10px;
+  }
+  .aside__main {
+    width: 100%;
+    min-height: 1200px;
+    gap: 0px;
   }
   .aside__footertitleblock {
     margin-right: 25%;

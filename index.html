@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Primer 1</title>
     <link rel="icon" href="pics/igoric.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
@@ -23,18 +23,18 @@
                 </div>
                 <nav class="header__burgercontainerelements" id="burger-menu">
                     <a href="#" class="header__burgerlink">главная</a>
-                    <a href="#" class="header__burgerlink">посты</a>
-                    <a href="#" class="header__burgerlink">статьи</a>
-                    <a href="#" class="header__burgerlink">теги</a>
-                    <a href="#" class="header__burgerlink">темы</a>
-                    <a href="#" class="header__burgerlink">контакты</a>
+                    <a href="#postlink" class="header__burgerlink">посты</a>
+                    <a href="#articlelink" class="header__burgerlink">статьи</a>
+                    <a href="#taglink" class="header__burgerlink">теги</a>
+                    <a href="#themelink" class="header__burgerlink">темы</a>
+                    <a href="#contactlink" class="header__burgerlink">контакты</a>
                 </nav>
             </div>            
             <h1 class="header__title">Блог о творчестве, спорте, <br> и образе жизни</h1>
         </header>
         <main class="main">
             <section class="main__brandblock">
-                <h2 class="main__brandblocktitle">Сейчас в тренде</h2>
+                <h2 id="postlink" class="main__brandblocktitle">Сейчас в тренде</h2>
                 <div class="main__brandblockline"></div>
                 <div class="main__brandblockflexcont">
                     <div class="main__brandblockflexel">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__mainblock">
+            <section class="main__mainblock" id="articlelink">
                 <div class="main__mainblockflexcont">
                     <div class="main__mainblockeflexel">
                         <div class="main__mainblockeflexell">
@@ -108,9 +108,9 @@
                             <p class="main__mainblockflexelrtext">
                                 Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
                             </p>
+                            <div class="main__delline"></div>
                         </div>
                     </div>
-                    <div class="main__mainline"></div>
                     <div class="main__mainblockeflexel">
                         <div class="main__mainblockeflexell">
                             <picture class="main__picturecontainer">
@@ -135,9 +135,9 @@
                             <p class="main__mainblockflexelrtext">
                                 Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.
                             </p>
+                            <div class="main__delline"></div>
                         </div>
                     </div>
-                    <div class="main__mainline"></div>
                     <div class="main__mainblockeflexel">
                         <div class="main__mainblockeflexell">
                             <picture class="main__picturecontainer">
@@ -166,9 +166,9 @@
                                     Мы составили список лучших летних фестивалей по всему миру.
                                 </p>
                             </div>
+                            <div class="main__delline"></div>
                         </div>
                     </div>
-                    <div class="main__mainline"></div>
                     <div class="main__mainblockeflexel">
                         <div class="main__mainblockeflexell">
                             <picture class="main__picturecontainer">
@@ -193,9 +193,9 @@
                             <p class="main__mainblockflexelrtext">
                                 Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
                             </p>
+                            <div class="main__delline"></div>
                         </div>
                     </div>
-                    <div class="main__mainline"></div>
                     <div class="main__mainblockeflexel">
                         <div class="main__mainblockeflexell">
                             <picture class="main__picturecontainer">
@@ -221,6 +221,7 @@
                             <p class="main__mainblockflexelrtext">
                                 Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
                             </p>
+                            <div class="main__delline"></div>
                         </div>
                     </div>
                     <div class="main__shop">
@@ -290,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    <footer class="main__foot">
+                    <footer class="main__foot" id="contactlink">
                         <div class="main__footmain">
                             <div class="main__footmaincontainer">
                                 <a href="#" class="main__footmainicon">
@@ -417,7 +418,7 @@
                         </div>
                         <footer class="aside__footer">
                             <div class="aside__footertitleblock">
-                                <h2 class="aside__title">теги</h2>
+                                <h2 class="aside__title" id="taglink">теги</h2>
                                 <div class="aside__line aside__line2"></div>
                             </div>
                             <div class="aside__footerflexcontainer">
@@ -455,7 +456,7 @@
                         </footer>
                         <footer class="aside__footerfoot">
                             <section class="aside__subscrblockheader">
-                                <h2 class="aside__title aside__title2">темы</h2>
+                                <h2 class="aside__title aside__title2" id="themelink">темы</h2>
                                 <div class="aside__line aside__line2"></div>
                             </section>
                             <div class="aside__footerfootcontainer">
