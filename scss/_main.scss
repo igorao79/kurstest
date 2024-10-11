@@ -574,7 +574,7 @@
         min-height: 979px;
         margin: 0;
         position: relative;
-        top: 50px;
+        top: -10%;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -624,7 +624,11 @@
     }
 
 
-
+    &__foot {
+        top: -10%;
+        left: 60%;
+        gap: 130px;
+    }
 
 
 
@@ -740,7 +744,7 @@
             &__shop {
                 min-height: 1900px;
                 min-width: 500px;
-                top: 1220px;
+                top: 1300px;
                 position: relative;
                 display: flex;
                 margin-left: 0;
@@ -787,8 +791,9 @@
 
 
             &__foot {
-                top: 650px;
+                top: 750px;
                 padding-right: 30%;
+                left: 5%;
                 gap: 120px;
             }
 
@@ -806,6 +811,29 @@
 
             }
 
+        }
+    }
+}
+
+@media (min-width:700px) and (max-width:820px) {
+    .main {
+        &__mainblock {
+            padding: 0;
+            margin: 0;
+            padding-left: 6%;
+            padding-top: 5%;
+        }
+
+        &__shop {
+            margin: 0;
+            top: -10%;
+            left: 50%;
+        }
+
+        &__foot {
+            top: -3%;
+            gap: 150px;
+            left: 45%;
         }
     }
 }

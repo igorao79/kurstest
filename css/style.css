@@ -905,7 +905,7 @@ a {
     min-height: 979px;
     margin: 0;
     position: relative;
-    top: 50px;
+    top: -10%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -961,6 +961,11 @@ a {
   }
   .main__shopline {
     margin-right: 50px;
+  }
+  .main__foot {
+    top: -10%;
+    left: 60%;
+    gap: 130px;
   }
   /* Дополнительная адаптивность для экранов шириной до 480px */
 }
@@ -1050,7 +1055,7 @@ a {
   .main__shop {
     min-height: 1900px;
     min-width: 500px;
-    top: 1220px;
+    top: 1300px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1104,8 +1109,9 @@ a {
     scale: 0.9;
   }
   .main__foot {
-    top: 650px;
+    top: 750px;
     padding-right: 30%;
+    left: 5%;
     gap: 120px;
   }
   .main__delline {
@@ -1116,6 +1122,24 @@ a {
     top: 10%;
     display: block;
     right: 8%;
+  }
+}
+@media (min-width: 700px) and (max-width: 820px) {
+  .main__mainblock {
+    padding: 0;
+    margin: 0;
+    padding-left: 6%;
+    padding-top: 5%;
+  }
+  .main__shop {
+    margin: 0;
+    top: -10%;
+    left: 50%;
+  }
+  .main__foot {
+    top: -3%;
+    gap: 150px;
+    left: 45%;
   }
 }
 .aside {
@@ -1507,5 +1531,23 @@ a {
   }
   .aside__footertitleblock {
     margin-right: 25%;
+  }
+}
+@media (min-width: 700px) and (max-width: 820px) {
+  .aside {
+    top: 2%;
+    right: 0;
+    left: 60%;
+    position: absolute;
+  }
+  .aside__title3 {
+    padding-right: 30%;
+  }
+  .aside__line3 {
+    right: 15%;
+    position: relative;
+  }
+  .aside__posttitle {
+    width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

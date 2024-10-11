@@ -356,3 +356,29 @@
 
     }
 }
+
+
+@media (min-width:700px) and (max-width:820px) {
+    .aside {
+        top: 2%;
+        right: 0;
+        left: 60%;
+        position: absolute;
+
+        &__title3 {
+            padding-right: 30%;
+        }
+
+        &__line3 {
+            right: 15%;
+            position: relative;
+        }
+
+        &__posttitle {
+            width: 200px;
+        }
+
+
+
+    }
+}
