@@ -110,6 +110,20 @@
 
 // /////////////////////////////////////////////////
 
+
+
+@media (max-width:1200px) {
+    .header {
+        max-width: 1200px;
+
+
+        &__burgercontainer {
+            gap: 230px;
+        }
+
+    }
+}
+
 @media (max-width: 1040px) {
     .header {
         max-width: 1040px;
@@ -146,11 +160,12 @@
             display: none; // Скрываем обычное меню
             flex-direction: column; // Делаем вертикальным при открытии
             position: absolute; // Делаем меню позиционированным
-            top: 100%; // Располагаем под бургером
+            top: 0; // Располагаем под бургером
             left: 0;
             width: inherit; // Ширина меню на весь экран
             background-color: rgba(0, 0, 0, 0.8); // Фон меню
             z-index: 10; // Поверх других элементов
+            border: 10px solid black;
 
             &.active {
                 display: flex; // Показываем меню, когда оно активно
