@@ -528,7 +528,7 @@
             top: 150px;
             padding-top: 2%;
             padding-left: 10%;
-            // min-height: 100vh;   
+            // min-height: 100vh;
 
             background-color: white;
         }
@@ -576,7 +576,7 @@
         top: 180px;
         display: flex;
         gap: 500px;
-        left: 0px;
+        left: 7%;
         right: 0;
     }
 
@@ -721,6 +721,7 @@
         &__mainblock {
             flex-direction: column; /* Меняем направление на колонку */
             gap: 30px; /* Уменьшаем отступы между блоками */
+            left: 5%;
             margin-top: 150%;
         }
         &__brandblockflexel {
@@ -754,6 +755,7 @@
                 margin: 0;
                 top: -10%;
                 left: 50%;
+                max-width: 350px;
             }
     
             &__foot {
@@ -794,10 +796,12 @@
 
 
             &__mainblock {
-                top: -3.5%;
+                top: 2%;
                 flex-grow: 1;
                 padding: 0;
                 padding-left: 12%;
+                padding-top: 0;
+                padding-bottom: 1000px;
             }
             &__mainblockflexcont {
                 gap: 300px;
@@ -871,7 +875,7 @@
                 position: relative;
                 display: flex;
                 margin-left: 0;
-                margin-left: -53px;
+                margin-left: -70px;
                 left: 0;
                 right: 0;
                 align-items: center;
@@ -922,7 +926,7 @@
             }
             
             &__footfoot {
-                padding-left: 20%;
+                padding-left: 10%;
             }
 
 
