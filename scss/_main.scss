@@ -499,6 +499,8 @@
 
 
 @media (max-width:1200px) {
+
+
     .main {
         &__brandblock {
             right: 200px;
@@ -526,7 +528,7 @@
             top: 150px;
             padding-top: 2%;
             padding-left: 10%;
-
+            // min-height: 100vh;   
 
             background-color: white;
         }
@@ -536,9 +538,6 @@
 
         }
 
-        &__foot {
-
-        }
 
         &__footmain {
             max-width: 900px;
@@ -788,10 +787,7 @@
     /* Дополнительная адаптивность для экранов шириной до 480px */
     @media (max-width: 480px) {
 
-        .page {
-            // overflow-x: hidden;
 
-        }
 
 
         .main {

@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body, html {
+  overflow-x: hidden; /* если нужно скрыть горизонтальную прокрутку */
+  overflow-y: auto; /* или scroll, чтобы разрешить вертикальную прокрутку */
+}
+
 body {
   background: conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0), conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 18px 18px, conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 36px 36px, conic-gradient(at 50% 25%, rgba(0, 0, 0, 0) 75%, #f4f4f4 0) 54px 54px, repeating-linear-gradient(135deg, #b6b6b6 0 12.5%, #e8e8e8 0 25%);
   background-size: 72px 72px;

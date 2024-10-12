@@ -8,6 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body, html {
+    overflow-x: hidden; /* если нужно скрыть горизонтальную прокрутку */
+    overflow-y: auto; /* или scroll, чтобы разрешить вертикальную прокрутку */
+  }
+
 body {
 //     background:
 //       conic-gradient(from -60deg at 50% calc(100%/3),#e8e8e8 0 120deg,#0000 0),
