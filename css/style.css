@@ -309,12 +309,10 @@ a {
     bottom: 50%;
     scale: 1.2;
   }
-  .header .header__title {
-    font-size: 1.1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 10%;
+  .header__title {
+    font-size: 1.2rem;
+    line-height: normal;
+    width: 60%;
   }
   .header__burgercontainer {
     gap: 0px;
@@ -327,10 +325,6 @@ a {
     top: -250%;
     left: 60%;
   }
-  .header__title {
-    font-size: 1.2rem;
-    line-height: normal;
-  }
   .header__burgercontainerelements {
     display: none;
     -webkit-box-orient: vertical;
@@ -339,11 +333,11 @@ a {
             flex-direction: column;
     position: absolute;
     top: 0;
-    left: 57%;
-    scale: 0.9;
-    width: 10%;
-    min-height: 500px;
+    left: 55%;
+    width: 15%;
+    min-height: 300px;
     z-index: 10;
+    gap: 25px;
   }
   .header__burgercontainerelements.active {
     display: -webkit-box;
@@ -1285,7 +1279,6 @@ a {
   max-height: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

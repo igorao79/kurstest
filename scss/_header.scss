@@ -56,7 +56,6 @@
         top: 10px;
         left: -6px;
         z-index: 1;
-
     }
 
     &__burgerlink {
@@ -87,8 +86,6 @@
         font-size: 2.25rem;
         margin-left: -90px;
         z-index: 1;
-
-
     }
 }
 
@@ -104,32 +101,24 @@
     opacity: 0.6;
     z-index: 0;
     top: 0px;
-
-
 }
 
-// /////////////////////////////////////////////////
+// Медиа-запросы
 
-
-
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
     .header {
         max-width: 1200px;
-
-
         &__burgercontainer {
             gap: 230px;
         }
-
     }
 }
 
 @media (max-width: 1040px) {
     .header {
         max-width: 1040px;
-        padding-left: 20px; 
-        gap: 50px; 
-
+        padding-left: 20px;
+        gap: 50px;
 
         &__title {
             font-size: 2rem;
@@ -139,7 +128,6 @@
             margin: 0;
         }
 
-
         &__logo {
             width: 158px;
             height: 36px;
@@ -147,9 +135,8 @@
         }
 
         &__burger {
-            display: flex; // Показываем бургер на мобильных устройствах
+            display: flex;
             position: relative;
-
         }
 
         &__burgercontainer {
@@ -158,14 +145,12 @@
 
         &__burgercontainerelements {
             display: none; // Скрываем обычное меню
-            flex-direction: column; // Делаем вертикальным при открытии
-            position: absolute; // Делаем меню позиционированным
-            top: 0; // Располагаем под бургером
+            flex-direction: column;
+            position: absolute;
+            top: 0;
             left: 0;
-            width: 50%; // Ширина меню на весь экран
-            // background-color: rgba(0, 0, 0, 0.8); // Фон меню
-            z-index: 10; // Поверх других элементов
-            // border: 10px solid black;
+            width: 50%;
+            z-index: 10;
 
             &.active {
                 display: flex; // Показываем меню, когда оно активно
@@ -178,44 +163,25 @@
     }
 }
 
-
-
-
 @media (max-width: 604px) {
     .header {
-        gap: 30px; 
+        gap: 30px;
         padding: 0;
         align-items: start;
         justify-content: start;
         max-width: 604px;
         width: 100%;
 
-
         &__title {
             font-size: 1.3rem;
             align-items: center;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        
     }
-
-    
-
 }
 
 @media (max-width: 480px) {
-
     .header {
         align-items: center;
         justify-content: center;
@@ -231,18 +197,16 @@
             scale: 1.2;
         }
 
-        .header__title {
-            font-size: 1.1rem;
-            align-items: center;
-            padding: 10%;
+        &__title {
+            font-size: 1.2rem;
+            line-height: normal;
+            width: 60%;
         }
-
 
         &__burgercontainer {
             gap: 0px;
         }
 
-        
         &__burger {
             display: flex;
             position: relative;
@@ -250,31 +214,21 @@
             left: 60%;
         }
 
-        &__title {
-            font-size: 1.2rem;
-            line-height: normal;
-            // padding-left: 50%;
-            // margin-right: 50%;
-        }
-
         &__burgercontainerelements {
-            display: none; // Скрываем обычное меню
-            flex-direction: column; // Делаем вертикальным при открытии
-            position: absolute; // Делаем меню позиционированным
-            top: 0; // Располагаем под бургером
-            left: 57%;
-            scale: 0.9;
-            width: 10%; // Ширина меню на весь экран
-            min-height: 500px;
-            // background-color: rgba(0, 0, 0, 0.8); // Фон меню
-            z-index: 10; // Поверх других элементов
-            // border: 10px solid black;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 55%;
+            width: 15%;
+            min-height: 300px;
+            // background-color: rgba(0, 0, 0, 0.8);
+            z-index: 10;
+            gap: 25px;
 
             &.active {
-                display: flex; // Показываем меню, когда оно активно
+                display: flex;
             }
         }
-
     }
-
 }
