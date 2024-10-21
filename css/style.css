@@ -332,10 +332,9 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 0;
-    left: 55%;
+    margin-left: 55%;
     width: 15%;
-    min-height: 300px;
+    padding: 0;
     z-index: 10;
     gap: 25px;
   }

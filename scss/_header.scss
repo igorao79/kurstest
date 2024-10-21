@@ -218,10 +218,11 @@
             display: none;
             flex-direction: column;
             position: absolute;
-            top: 0;
-            left: 55%;
+            // top: 0;
+            margin-left: 55%;
             width: 15%;
-            min-height: 300px;
+            padding: 0;
+            // min-height: 300px;
             // background-color: rgba(0, 0, 0, 0.8);
             z-index: 10;
             gap: 25px;
