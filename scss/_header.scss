@@ -149,7 +149,7 @@
         &__burger {
             display: flex; // Показываем бургер на мобильных устройствах
             position: relative;
-            left: 150px;
+
         }
 
         &__burgercontainer {
@@ -162,10 +162,10 @@
             position: absolute; // Делаем меню позиционированным
             top: 0; // Располагаем под бургером
             left: 0;
-            width: inherit; // Ширина меню на весь экран
-            background-color: rgba(0, 0, 0, 0.8); // Фон меню
+            width: 50%; // Ширина меню на весь экран
+            // background-color: rgba(0, 0, 0, 0.8); // Фон меню
             z-index: 10; // Поверх других элементов
-            border: 10px solid black;
+            // border: 10px solid black;
 
             &.active {
                 display: flex; // Показываем меню, когда оно активно
@@ -242,10 +242,12 @@
             gap: 0px;
         }
 
+        
         &__burger {
-            position: absolute;
-            right: 55%;
-            bottom: 50%;
+            display: flex;
+            position: relative;
+            top: -250%;
+            left: 60%;
         }
 
         &__title {
@@ -255,11 +257,24 @@
             // margin-right: 50%;
         }
 
-        &__burger {
-            position: relative;
-            bottom: 230%;
-            left: 80%;
+        &__burgercontainerelements {
+            display: none; // Скрываем обычное меню
+            flex-direction: column; // Делаем вертикальным при открытии
+            position: absolute; // Делаем меню позиционированным
+            top: 0; // Располагаем под бургером
+            left: 57%;
+            scale: 0.9;
+            width: 10%; // Ширина меню на весь экран
+            min-height: 500px;
+            // background-color: rgba(0, 0, 0, 0.8); // Фон меню
+            z-index: 10; // Поверх других элементов
+            // border: 10px solid black;
+
+            &.active {
+                display: flex; // Показываем меню, когда оно активно
+            }
         }
+
     }
 
 }
